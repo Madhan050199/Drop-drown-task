@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+<title>Dropdown</title>
+</head>
+<style>
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+body{
+--bg-color:rgb(40,116,240);	
+--font-style:sans-serif;
+}
+.menu_bar{
+background-color:var(--bg-color);
+height:50px;
+width:100%;
+display:flex;
+justify-content:center;
+padding:5px;
+align-items:center;
+}
+.menu_bar ul{
+list-style-type:none;
+display:flex;
+
+}
+.menu_bar ul li{
+display:inline-block;
+position:relative;
+}
+.menu_bar ul li a{
+border-radius:5px;
+color:black;
+padding:10px 20px;
+background-color:white;
+text-decoration:none;
+font-size:18px;
+font-family:var(--font-style)
+}
+.menu_bar ul li a:hover{
+background-color:#E6E6E6;
+transition:0.3s;
+}
+.Dropdown_box{
+position:absolute;
+top:31px;
+right:-79px;
+
+}
+
+.Dropdown_box ul{
+display:flex;
+flex-direction:column;
+width:250px;
+background-color:white;
+box-shadow:0px 0px 10px black;
+border-radius:10px;
+}
+.Dropdown_box ul li{
+border-top:1px solid #D8DBDE;
+border-radius:10px;
+}
+.Dropdown_box ul li a{
+display:inline-block;
+width:100%;
+padding:20px 10px;
+}
+.Dropdown_box ul li a img{
+width:20px;
+height:20px;
+margin-right:15px;
+margin-left:10px;
+}
+
+#link1{
+font-size:15px;
+font-weight:bold;
+}
+label{
+color:#4899FF;
+}
+span{
+display:inline-block;
+margin-right:50px;
+}
+.Dropdown_box{
+display:none;
+}
+.menu_bar ul li:hover .Dropdown_box{
+display:block;
+}
+</style>
+<body>
+<div class="menu_bar">
+<ul>
+<li><a href="#">Login</a>
+<div class="Dropdown_box">
+<ul>
+<li><a id="link1" href="#"><span>New customer?</span><label>Sign Up</label></a></li>
+<li><a href="#"><img src="images/profile.png" alt="profile">My Profile</a></li>
+<li><a href="#"><img src="images/add.png" alt="add">Flipkart Plus Zone</a></li>
+<li><a href="#"><img src="images/order.png" alt="order">Orders</a></li>
+<li><a href="#"><img src="images/like.png" alt="like">Wishlist</a></li>
+<li><a href="#"><img src="images/reward.png" alt="reward">Rewards</a></li>
+<li><a href="#"><img src="images/gift.png" alt="gift">Gift Cards</a></li>
+</ul>
+</div>
+</li> 
+</ul>
+</div> 
+</body>
+</html>
